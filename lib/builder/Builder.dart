@@ -16,4 +16,20 @@ class Builder {
           Navigator.of(context).pushNamed(pageName);
         });
   }
+
+
+static Widget buildListButtonItems(
+      String text, Function press, BuildContext context) {
+    return RaisedButton(
+        child: Text(text),
+        color: Colors.blue,
+        textColor: Colors.white,
+        colorBrightness: Brightness.dark,
+        shape:
+            RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
+        onPressed: press);
+  }
+
+
+
 }

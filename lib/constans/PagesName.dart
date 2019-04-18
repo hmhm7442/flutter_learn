@@ -13,5 +13,13 @@ final page_widgets_check = "page_widgets_check";
 
 
 final page_list_widgets = "page_list_widgets";
-final page_list_layouts = "page_list_layouts";
+
+const page_list_layouts = "page_list_layouts";
+const page_row = "page_layout_row";
+const page_flex = "page_layout_flex";
+const page_wrap = 'page_layout_warp';
+
+
+
+
 
