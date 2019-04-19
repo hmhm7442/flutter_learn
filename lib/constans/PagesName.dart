@@ -18,7 +18,7 @@ const page_list_layouts = "page_list_layouts";
 const page_row = "page_layout_row";
 const page_flex = "page_layout_flex";
 const page_wrap = 'page_layout_warp';
-
+const page_stack = 'page_layout_stack';
 
 
 

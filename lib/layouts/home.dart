@@ -17,6 +17,8 @@ class LayoutList extends StatelessWidget {
 
           bd.Builder.buildListButtonItem("Flex 弹性布局", page_flex, context),
           bd.Builder.buildListButtonItem("Wrap 自动扩容", page_wrap, context),
+          bd.Builder.buildListButtonItem("Stack 层叠布局", page_stack, context),
+          
         ],
       ),
     );

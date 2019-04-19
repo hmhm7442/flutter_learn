@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:learn/constans/PagesName.dart';
 import 'package:learn/layouts/Flex.dart';
 import 'package:learn/layouts/Row.dart';
+import 'package:learn/layouts/Stack.dart';
 import 'package:learn/layouts/Wrap.dart';
 import 'package:learn/pages/Login.dart';
 import 'package:learn/pages/FormTest.dart';
@@ -52,6 +53,7 @@ class MyApp extends StatelessWidget {
         page_row : (context)=> PageRow(),
         page_flex: (context)=> PageFlex(),
         page_wrap:(context)=> PageWrap(),
+        page_stack:(context)=>PageStack(),
       }, //路由表
       home: MyStatelessWidget(),
     );
