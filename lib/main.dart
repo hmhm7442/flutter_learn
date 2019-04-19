@@ -1,7 +1,9 @@
 // This sample shows adding an action to an [AppBar] that opens a shopping cart.
 
 import 'package:flutter/material.dart';
+import 'package:learn/Home.dart';
 import 'package:learn/constans/PagesName.dart';
+import 'package:learn/containers/home.dart';
 import 'package:learn/layouts/Flex.dart';
 import 'package:learn/layouts/Row.dart';
 import 'package:learn/layouts/Stack.dart';
@@ -54,6 +56,9 @@ class MyApp extends StatelessWidget {
         page_flex: (context)=> PageFlex(),
         page_wrap:(context)=> PageWrap(),
         page_stack:(context)=>PageStack(),
+        page_list_container:(context)=>PageConstrained(),
+        page_demo :(context)=>PageDemo()
+
       }, //路由表
       home: MyStatelessWidget(),
     );
@@ -71,10 +76,10 @@ class MyStatelessWidget extends StatelessWidget {
           title: Text('Hello World'),
           actions: <Widget>[
             IconButton(
-              icon: Icon(Icons.shopping_cart),
+              icon: Icon(Icons.android),
               tooltip: 'Open shopping cart',
               onPressed: () {
-                Navigator.of(context).pushNamed(PAGE_LOGIN);
+                Navigator.of(context).pushNamed(page_demo);
               },
             ),
           ],
@@ -84,6 +89,7 @@ class MyStatelessWidget extends StatelessWidget {
             children: <Widget>[
               bd.Builder.buildListButtonItem("Widgets", page_list_widgets, context),
               bd.Builder.buildListButtonItem("Layouts", page_list_layouts, context),
+              bd.Builder.buildListButtonItem("Containers", page_list_container, context),
             ],
           ),
         ));
